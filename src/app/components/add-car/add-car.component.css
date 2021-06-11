@@ -1,0 +1,9 @@
+body{
+    background-color: white;
+    max-width: 100%;
+}
+
+.bg{
+    background-image: url(../../../img/car.jpg);
+    background-position: center center;
+}

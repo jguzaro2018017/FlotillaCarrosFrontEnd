@@ -1,0 +1,50 @@
+<app-navbar></app-navbar>
+<body>
+    <div class="container-fluid">
+      <div class="row alig-items-stretch">
+        <div class="col">
+          <div class="pt-5 px-5">
+            <h2>Actualizar Carro</h2>
+          </div>
+          <form class="row g-3 p-5">
+            <!-- Input ID-->
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">ID</label>
+                <input [(ngModel)]="car.automovilID" type="number" class="form-control" id="inputEmail4" name="inputID">
+            </div>
+            <!-- Input ID-->
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Placa</label>
+                <input [(ngModel)]="car.placa" type="text" class="form-control" id="inputPassword4" name="inputPlaca">
+            </div>
+            <!-- Input ID-->
+            <div class="col-12">
+              <label for="inputmarcacarro" class="form-label">Marca</label>
+              <input [(ngModel)]="car.marca" type="text" class="form-control" id="imputmarcacarro" name="inputMarca">
+            </div>
+            <!-- Input ID-->
+            <div class="col-12">
+              <label for="inputmodelocarro" class="form-label">Modelo</label>
+              <input [(ngModel)]="car.modelo" type="text" class="form-control" id="inputmodelocarro" name="inputModelo">
+            </div>
+            <!-- Input ID-->
+            <div class="col-md-6">
+              <label for="inputaniocarro" class="form-label">Año</label>
+              <input [(ngModel)]="car.anio" type="text" class="form-control" id="inputaniocarro" name="inputAño">
+            </div>
+            <!-- Input ID-->
+            <div class="col-md-6">
+              <label for="inputestadobro" class="form-label">Estado</label>
+              <input  [(ngModel)]="car.estado" type="text" class="form-control" id="inputestadobro" name="inputEstado" >
+            </div>
+            <!-- Button to Update-->
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" (click)="onSubmit()">Actualizar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col bg ">
+        </div>
+      </div>
+    </div>
+  </body>

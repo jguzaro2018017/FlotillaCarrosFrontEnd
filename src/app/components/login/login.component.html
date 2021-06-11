@@ -1,0 +1,36 @@
+<body class="container fluid vh-100 pt-5" >
+    <div class="container-fluid w-75 bg-primary rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg rounded">
+        
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+        
+                <!-- Login -->
+                <form (ngSubmit)='onSubmit' action="#">
+                    <div class="mb-4">
+                        <label for="userLogin.email" class="form-label">Correo Electronico</label>
+                        <input [(ngModel)]="userLogin.email" type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input [(ngModel)]="userLogin.passwordU" type="password" class="form-control" name="password">
+                    </div>
+                    <div class="mb-4">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantener conectado</label>
+                    </div>
+                    <!-- Sign In Button-->
+                    <div class="d-grid">
+                        <button type='submit' class="btn btn-primary" (click)="onSubmit()">Iniciar Sesion</button>
+                    </div>
+                    <div class="my-3">
+                        <span>No tienes cuenta? <a href="#">Registrate</a></span><br>
+                        <span><a href="#">Recuperar Contraseña</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

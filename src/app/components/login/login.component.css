@@ -1,0 +1,10 @@
+html, body{
+    background: #F9C37B;
+    background: linear-gradient(to right, #7AAAC1, #236E92);
+    max-width: 100%;
+}
+
+.bg{
+    background-image: url(../../../img/car.jpg);
+    background-position: center center;
+}

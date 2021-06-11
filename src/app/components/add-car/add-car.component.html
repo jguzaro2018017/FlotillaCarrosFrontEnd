@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<body>
+  <div class="container-fluid">
+    <div class="row alig-items-stretch">
+      <div class="col">
+        <div class="pt-5 px-5">
+          <h2>Registrar Carro</h2>
+        </div>
+        <form class="row g-3 p-5">
+          <div class="col-md-6">
+
+            <!-- Input ID-->
+            <label for="inputEmail4" class="form-label">ID</label>
+            <input [(ngModel)]="car.automovilID" type="number" class="form-control" id="inputEmail4" name="inputID"> 
+          </div>
+          <div class="col-md-6">
+            <!-- Input Placa-->
+            <label for="inputPassword4" class="form-label">Placa</label>
+            <input [(ngModel)]="car.placa" type="text" class="form-control" id="inputPassword4" name="inputPlaca">
+          </div>
+          <!-- Input Marca-->
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Marca</label>
+            <input [(ngModel)]="car.marca" type="text" class="form-control" id="inputAddress" name="inputMarca">
+          </div>
+          <!-- Input Modelo-->
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Modelo</label>
+            <input [(ngModel)]="car.modelo" type="text" class="form-control" id="inputAddress2" name="inputModelo">
+          </div>
+          <!-- Input Año-->
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Año</label>
+            <input [(ngModel)]="car.anio" type="text" class="form-control" id="inputCity" name="inputAño">
+          </div>
+          <!-- Input Estado-->
+          <div class="col-md-6">
+            <label for="inputZip" class="form-label">Estado</label>
+            <input  [(ngModel)]="car.estado" type="text" class="form-control" id="inputZip" name="inputEstado" >
+          </div>
+          <div class="col-12">
+          </div>
+          <!-- Button Save Form-->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary" (click)="submit()">Guardar</button>
+          </div>
+        </form>
+      </div>
+      <div class="col bg ">
+      </div>
+    </div>
+  </div>
+</body>

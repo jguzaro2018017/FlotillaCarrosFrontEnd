@@ -1,0 +1,76 @@
+<app-navbar></app-navbar>
+<body>
+  <div class="container-fluid">
+    <div class="row alig-items-stretch">
+      <div class="col">
+        <div class="pt-5 px-5">
+          <h2>Registrar Carro</h2>
+        </div>
+        <form class="row g-3 p-5">
+          <div class="col-md-6">
+
+            <!-- Input ID-->
+            <label for="inputIDUsuario" class="form-label">ID de Usuario</label>
+            <input [(ngModel)]="user.userID" type="number" class="form-control" id="inputIDUsuario" name="inputID"> 
+          </div>
+          <div class="col-md-6">
+            <!-- Input Placa-->
+            <label for="inputDPI" class="form-label">DPI</label>
+            <input [(ngModel)]="user.DPI" type="text" class="form-control" id="inputDPI" name="inputPlaca">
+          </div>
+          <!-- Input Marca-->
+          <div class="col-12">
+            <label for="inputUsername" class="form-label">Username</label>
+            <input [(ngModel)]="user.username" type="text" class="form-control" id="inputUsername" name="inputMarca">
+          </div>
+          <!-- Input Modelo-->
+          <div class="col-12">
+            <label for="inputNombre" class="form-label">Nombre</label>
+            <input [(ngModel)]="user.nameU" type="text" class="form-control" id="inputNombre" name="inputModelo">
+          </div>
+          <!-- Input Año-->
+          <div class="col-md-6">
+            <label for="inputApellido" class="form-label">Apellido</label>
+            <input [(ngModel)]="user.lastnameU" type="text" class="form-control" id="inputApellido" name="inputAño">
+          </div>
+          <!-- Input Estado-->
+          <div class="col-md-6">
+            <label for="inputFC" class="form-label">Fecha de Contratacion</label>
+            <input [(ngModel)]="user.hiringDate" type="text" class="form-control" id="inputZip" name="inputFC" >
+          </div>
+           <!-- Input Estado-->
+        <div class="col-md-6">
+            <label for="inputEdad" class="form-label">Edad</label>
+            <input [(ngModel)]="user.age" type="text" class="form-control" id="inputEdad" name="inputEstado" >
+          </div>
+           <!-- Input Estado-->
+           <div class="col-md-6">
+            <label for="inputNT" class="form-label">Numero de Telefono</label>
+            <input [(ngModel)]="user.phoneNumber" type="text" class="form-control" id="inputNT" name="inputNT" >
+          </div>
+           <!-- Input Estado-->
+           <div class="col-md-6">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input [(ngModel)]="user.email" type="text" class="form-control" id="inputEmail" name="inputEmail" >
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword" class="form-label">Contraseña</label>
+            <input [(ngModel)]="user.passwordU" type="password" class="form-control" id="inputPassword" name="inputPassword" >
+          </div>
+          <div class="col-md-6">
+            <label for="inputRol" class="form-label">Rol</label>
+            <input [(ngModel)]="user.rol" type="text" class="form-control" id="inputRol" name="inputRol" >
+          </div>
+          <div class="col-12">
+          </div>
+          <!-- Button Save Form-->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary" (click)="registerUser()">Guardar</button>
+          </div>
+        </form>
+      </div>
+      <div class="col bg ">
+      </div>
+    </div>
+  </div>
+</body>

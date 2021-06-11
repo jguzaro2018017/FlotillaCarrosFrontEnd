@@ -1,0 +1,39 @@
+<app-navbar></app-navbar> <!--Add Navbar to Page-->
+<div class="container pt-5">
+    <h2>Listado de Usuarios</h2>
+</div>
+<div class="container pt-5">
+    <table class="table table-dark table-streaped">
+      <!-- Table Header-->
+        <thead>
+          <tr>
+            <!-- Table Columns-->
+            <th scope="col">ID</th>
+            <th scope="col">DPI</th>
+            <th scope="col">Username</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">FC</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Email</th>
+            <th scope="col">Rol</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let user of users">
+            <!-- Table rows-->
+          <tr>
+            <th scope="row">{{user.userID}}</th>
+            <td>{{user.DPI}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.nameU}}</td>
+            <td>{{user.lastnameU}}</td>
+            <td>{{user.hiringDate}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.rol}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
