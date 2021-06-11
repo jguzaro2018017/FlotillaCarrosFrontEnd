@@ -20,7 +20,7 @@ Se utilizo el lenguaje de etiquetas HTML5 y el lenguaje de diseño grafico CSS3.
 ##### Prerrequisitos
 - Instalar NodeJS descargándolo desde la pagina oficial. https://nodejs.org/es/download/
 - Instalar Angular CLI en su version 9.1.3 .
-`npm install -g @angular/cli@6.1.1
+`npm install -g @angular/cli@9.1.3`
 - Tener instalado MySQL Workbench como software para manipular scripts SQL y Esquemas.
 - Tener una conexión local mysql con hostname:127.0.0.1, port 3306, username root, password: password y Connection Method: Standard(TCP/IP).
 [MySQL Connection](https://ibb.co/L8QHTn7 "MySQL Connection")
